@@ -1,0 +1,32 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-10-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+
+<template>
+
+
+    <lightning-card title="LIST OF TRENDING MOVIES">
+      <lightning-button slot="actions" label="DISPLAY" onclick={handleChange}></lightning-button>
+      <template for:each={newArray} for:item="data">
+      
+        <div key={data.id}>
+            <lightning-layout horizontal-align="stretch">
+              <lightning-layout-item padding="slds-p-around_medium">
+                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center"> 
+                  <img src="https://picsum.photos/200"></image>
+                  TITLE : {data.original_title}
+                  RELEASE DATE : {data.release_date}
+
+                </div>
+            </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    </lightning-card>  
+   
+</template>

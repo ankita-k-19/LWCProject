@@ -1,0 +1,31 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-08-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="number" value={number1} label="Enter a Number" onchange={input1}></lightning-input>
+        </div>
+        
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="number" value={number2} label="Enter a Number" onchange={input2}></lightning-input>
+        
+        </div> 
+        
+        <div class="slds-p-around_medium lgc-bg">
+        <lightning-button variant="brand-outline" label="ADD" title="Addition of numbers" onclick={handleClickAdd} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand-outline" label="SUBTRACT" title="Substracion" onclick={handleClickSub} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand-outline" label="MULTIPLY" title="Multiply" onclick={handleClickMul} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand-outline" label="DIVIDE" title="divide" onclick={handleClickDiv} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            RESULT :: {result}
+        </div>
+    </lightning-card>
+  
+</template>

@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-12-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+
+        <lightning-combobox
+            name="Industry"
+            label="IndustryPicklist"
+            placeholder="Choose Industry"
+            value={value}
+            onchange={handleChange}
+            options={industy_options}
+        >
+        </lightning-combobox>
+        <p>Selected option: {value}</p>
+
+
+    </lightning-card>
+    
+        
+    
+    
+</template>

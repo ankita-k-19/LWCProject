@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-12-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <lightning-card>
+        <div style="width:500px">
+            <lightning-button label="START" onclick={handleProgress}></lightning-button>
+            <c-daughtercomponent onevent={display} onprogressreached={enablebutton}></c-daughtercomponent>
+
+        </div>
+        
+    </lightning-card>
+    
+    
+</template>

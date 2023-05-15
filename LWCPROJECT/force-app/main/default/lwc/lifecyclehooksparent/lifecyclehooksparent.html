@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card>
+        
+        
+        <template if:true={onclick}>
+            <lightning-button label="hideComponent" onclick={handleclick}></lightning-button>
+                <c-lifecyclehookschild></c-lifecyclehookschild>
+
+        </template>
+        <template if:false={onclick}>
+            <lightning-button label="showComponent" onclick={handleclick}></lightning-button>
+    
+        </template>
+    </lightning-card>
+    
+</template>

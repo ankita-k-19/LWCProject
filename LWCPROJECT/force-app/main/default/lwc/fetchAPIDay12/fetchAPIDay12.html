@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-11-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+
+    <lightning-card  title="Movie">
+        
+        <template for:each={newArray} for:item="data">
+      
+            <div key={data.id}>
+
+                
+
+                    div class="custom-box slds-box slds-p-around_medium slds-text-align_center"> 
+                      <img src="https://picsum.photos/200"></image>
+                      TITLE : {data.original_title}
+                      RELEASE DATE : {data.release_date}
+    
+                    </div>
+
+                
+                
+                    
+                
+            </div>
+        </template>
+            
+            
+    
+        <div slot="footer">
+           <lightning-button label="PREVIOUS" class="slds-is-relative" onclick={Previous}></lightning-button>
+            <lightning-button label="NEXT" class="slds-is-relative" onclick={Next}></lightning-button>
+
+        </div>
+    </lightning-card>
+    
+</template>

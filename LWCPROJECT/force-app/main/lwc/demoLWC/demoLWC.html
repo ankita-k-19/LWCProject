@@ -1,0 +1,39 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-24-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+
+    <lightning-card title="USER DETAILS" >
+      <div class="intro">
+        WELCOME {user.FirstName} !!!!!! </BR>
+        Your license is of the type {user.LicenseType}</BR>
+        Your Role is {user.Role}</BR>
+      </div>
+    </lightning-card>
+    <lightning-card title="COMPANY DETAILS">
+        <div class="intro">
+            Your Company Details are as follows:</BR>
+            <ol>
+                <li>Company Name is : {companyName}</li>
+                <li>{companyName} is : {ceo}</li>
+                <li>{companyName} domain is :{domain}</li>
+                <li>No of employees working in {companyName} are {noOfEmployees}</li>
+                <li>
+                    Company Address : {companyAddress.Location} , {companyAddress.zip}
+                </li>
+            </ol>
+          </div>
+    </lightning-card>
+    
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="ROLE" label="Enter your role" onchange={handleInputChange}></lightning-input>
+    </div>
+     
+    Role : {Roleuser};
+
+</template>

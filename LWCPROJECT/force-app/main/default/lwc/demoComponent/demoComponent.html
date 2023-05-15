@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-07-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+
+
+    
+    <lightning-input data-id="input" label="Employee  Names "></lightning-input>
+    <template for:each={employee} for:item="em">
+        <lightning-button data-emp={em.id} data-empname={em.Name} label={em.Name} onclick={handleClick} key={em.id}></lightning-button>
+    </template>
+</template>

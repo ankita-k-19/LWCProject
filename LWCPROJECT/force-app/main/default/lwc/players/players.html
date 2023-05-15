@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-12-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-carousel>
+       
+            
+    <template for:each={players} for:item="player"> 
+                   
+        <lightning-carousel-image key={player.id} 
+            src={player.image}
+            header={player.name}
+            description={player.role} >
+                       
+        </lightning-carousel-image>
+                   
+    </template>
+                
+            
+        
+    </lightning-carousel>
+    
+       
+    
+</template>

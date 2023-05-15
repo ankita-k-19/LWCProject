@@ -1,0 +1,37 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-06-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-grid_vertical">
+            <div class="slds-col">
+              <span><lightning-input type="text" label="Enter Salary value" onchange={handleInputChange}></lightning-input>
+                <lightning-button variant="success" label="get employees" onclick={handleClick} class="slds-m-left_x-small slds-align-centre"></lightning-button>
+            </span>
+            </div>
+            <template lwc:if={click}>
+                <div class="slds-col">
+                    <span>
+                        <template for:each={filterarray} for:item="employee" >
+                            <div key={employee.Name}>
+                                
+
+                                {employee.Name}
+                                {employee.Salary}
+					
+						
+        
+                            </div>
+                        </template>
+                    </span>
+                </div>
+            </template>
+        </div>
+
+    </lightning-card>
+   
+</template>

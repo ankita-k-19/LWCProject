@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-08-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card>
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+          <div class="slds-size_2-of-2">
+            <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+              <h1 class={textcolour}> {message}</h1></div>
+          </div>
+          <div class="slds-size_1-of-2">
+            <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"> <lightning-button variant="destructive" label="RED" onclick={handleClickRed} class="slds-m-left_x-small"></lightning-button></div>
+          </div>
+          <div class="slds-size_1-of-2">
+            <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"><lightning-button variant="success" label="GREEN" onclick={handleClickGreen} class="slds-m-left_x-small"></lightning-button></div>
+          </div>
+          
+        </div>
+    </lightning-card>
+    
+</template>

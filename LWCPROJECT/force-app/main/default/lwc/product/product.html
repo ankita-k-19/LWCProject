@@ -1,0 +1,52 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-05-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card>
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-2">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small"> 
+                    <lightning-input type="text" label="Enter Stock value" onchange={handleInputChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-size_1-of-2">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                    <lightning-button variant="success" label="UPDATE STOCK" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+                </div>
+            </div> 
+            
+        <template lwc:if ={click}>
+            <div class="slds-size_2-of-2">
+                <div class="slds-box slds-box_x-small  slds-m-around_x-small">
+                    <template lwc:if={product.Stock} > 0 >
+                        PRODUCT DETAILS
+                        <li>{product.Name}</li>
+                        <li>{product.Price}</li>
+                        <li>{product.Stock}</li>
+
+                    </template>
+                    <template lwc:else>
+
+                        The Product is OUT OF STOCK
+
+                    </template>
+                        
+                </div>
+            </div>  
+        </template>
+        
+        
+                    
+                
+                
+           
+        </div>
+        
+    </lightning-card>
+    
+</template>

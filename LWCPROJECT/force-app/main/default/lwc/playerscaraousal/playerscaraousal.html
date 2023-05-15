@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-12-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">PLAYER INFORMATION
+            <template for:each={slideval} for:item="player"> 
+               
+                <div key={player.id}>
+                    <img src = {player.image}/>
+                    
+                </div>
+                
+            </template>
+            
+        </div>
+    </lightning-card>
+    
+</template>
