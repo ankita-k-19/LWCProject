@@ -6,6 +6,7 @@ import industry_PL from '@salesforce/schema/Account.Industry';
 export default class Ldswireadp2 extends LightningElement {
 industy_options;  // used to store the array that will pass the picklist values to the combo component
 recordTypeid;
+value='Education'; //
 @wire(getObjectInfo,{objectApiName:'Account'})
 getrecordid({data,error})
 {
@@ -28,7 +29,7 @@ getpicklistval({data,error}){
         this.industy_options=JSON.parse(JSON.stringify(data.values.map(val=>{
 
             return {label:val.label,value:val.value};// we have created the data according to the format 
-    the
+    
         }
             
         )))
@@ -41,5 +42,11 @@ getpicklistval({data,error}){
     }
 
 }
+
+    
+    handleChange(event){
+
+        this.value=event.target.value;
+    }
 
 }
